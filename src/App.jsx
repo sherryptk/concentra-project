@@ -39,6 +39,7 @@ export default class Application extends Component {
             selectedKeys={[this.state.page]}
             style={{ lineHeight: '64px' }}
             onClick={item => handleOnPageNavigation.call(this, item)}>
+            {console.log(this)}
             {buildNavigationItems(['page1', 'page2'])}
           </Menu>
         </Layout.Header>
